@@ -34,3 +34,15 @@ export const limiTasbihDefaultValue = (limitTasbih, pearlPerView = 5) => {
     return [];
   }
 };
+
+export const isFieldWithValue = (field) =>
+  field && field?.replace(/\s/g, "")?.length;
+
+export const truncateText = (text = "", endTo = 25) =>
+  text?.length > endTo ? `${text.substr(0, endTo)}...` : text;
+
+export const formatNumber = (num, div = " ") =>
+  num?.toString()?.replace(/\B(?=(\d{3})+(?!\d))/g, div) || "";
+
+export const onlyContainsNumber = (value) =>
+  isFieldWithValue(value) && /^\d+$/.test(value);

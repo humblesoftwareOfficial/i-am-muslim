@@ -24,6 +24,12 @@ export const TASBIH_STYLE = StyleSheet.create({
     fontSize: 68,
     color: APP_COLORS.PRIMARY_DARK_COLOR.color
   },
+  tasbih_name: {
+    fontFamily: FONTS.righteousRegular,
+    fontWeight: "bold",
+    fontSize: 24,
+    color: APP_COLORS.PRIMARY_DARK_COLOR.color
+  },
   tasbih_limit: {
     fontFamily: FONTS.righteousRegular,
     fontSize: 20,
@@ -62,4 +68,15 @@ export const TASBIH_STYLE = StyleSheet.create({
   },
 });
 
-
+export const TASBIH_FORM_STYLE = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 25,
+  },
+  title: {
+    textAlign: "center",
+    fontFamily: FONTS.bold,
+    fontSize: 20,
+    color: APP_COLORS.PRIMARY_DARK_COLOR.color
+  }
+})

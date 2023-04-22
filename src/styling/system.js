@@ -52,7 +52,7 @@ export const APP_COLORS = StyleSheet.create({
     height: Dimensions.get("screen").height,
   },
   RED_COLOR: {
-    color: "#F55738",
+    color: "#ED6B52",
   },
   BLACK_COLOR: {
     color: "#000"
